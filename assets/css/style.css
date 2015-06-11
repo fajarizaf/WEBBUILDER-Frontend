@@ -1,0 +1,99 @@
+body {
+    margin:0px;
+    padding:0px;
+    background: url('../pic/background.jpg') repeat-x;
+}
+
+.bgheader {
+    width: 100%;
+    height: 634px;
+    background: url('../pic/bg.jpg') repeat-x;
+}
+
+.windowsthemes {
+    width:309px;
+    height: 225px;
+    background: url('../pic/bgass.png') no-repeat;
+    background-color: #ececec;
+    float: left;
+    margin-right: 15px;
+    -moz-box-shadow: 0px 0px 3px #6b91ac;
+    -webkit-box-shadow: 0px 0px 3px #6b91ac;
+    box-shadow: 0px 0px 3px #6b91ac;
+    margin-top: 10px;
+    -moz-border-radius : 3px 3px 3px;
+    -webkit-border-radius : 3px 3px 3px;
+    border-radius : 3px 3px 3px;
+}
+
+div[style=buttonused] {
+    width:73px;
+    height: 31px;
+    background:url('../pic/used.png') no-repeat; 
+    float: right;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+
+div[style=buttonused]:hover {
+    background:url('../pic/usedhover.png') no-repeat;
+}
+
+#myformRegister input[type=text] {
+    width:200px;
+    height:35px;
+    border:1px solid #ccc;
+    padding: 4px;
+    -moz-border-radius:3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px;
+    border-radius:3px 3px 3px;
+}
+
+#myformRegister input[type=password] {
+    width:200px;
+    height:35px;
+    border:1px solid #ccc;
+    padding:4px;
+    -moz-border-radius:3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px;
+    border-radius:3px 3px 3px;
+}
+
+#myformLogin input[type=text] {
+    width:200px;
+    height:35px;
+    border:1px solid #ccc;
+    padding: 4px;
+    -moz-border-radius:3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px;
+    border-radius:3px 3px 3px;
+}
+
+#myformLogin input[type=password] {
+    width:200px;
+    height:35px;
+    border:1px solid #ccc;
+    padding:4px;
+    -moz-border-radius:3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px;
+    border-radius:3px 3px 3px;
+}
+
+
+#sticky {
+    padding:5px;
+    background: #f9edbe;
+    border:1px solid #f0c36d;
+    color:#802222;
+    display: none;
+}
+
+.systemheader {
+    width:100%;
+    height:60px;
+
+}
+
+
+
