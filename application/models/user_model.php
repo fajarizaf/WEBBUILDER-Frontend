@@ -22,6 +22,7 @@ class   User_model extends CI_Model {
     
     
         $data = array (
+            "image" => 's',
             "nama_lengkap" => $username,
             "username" => $username,
             "password" => $password,
@@ -33,11 +34,17 @@ class   User_model extends CI_Model {
         $query = $this->db->insert('user', $data);
           
           if($query) {
+            $getidusers = $this->db->query('select * from user where username="'.$username.'"');
+
+            foreach ($getidusers->result() as $key ) {
                         $session_data = array (
                             'username' => $this->input->post('username'),
+                            'id' => $key->no,
+                            'themes' => $key->themes_dipilih,
                         );              
                         $this->session->set_userdata($session_data);
-                        echo $encrypt_username;
+                        echo '{"result":'.json_encode($session_data).'}';
+            }            
 
           } else {
               echo "Pendaftaran gagal";
