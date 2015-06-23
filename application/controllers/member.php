@@ -34,7 +34,7 @@ public function login() {
 
 
 public function getUser() {
-        $where['username'] = $this->uri->segment(3);
+        $where['username'] = str_replace("%20"," ",$this->uri->segment(3));
         $datauser = $this->app_model->getSelectedData('user',$where);
 
         foreach ($datauser as $row) {
